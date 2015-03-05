@@ -15,7 +15,8 @@ if [ "$1" = 'freeswitch' ]; then
 	ulimit -s 240
 	exec gosu freeswitch freeswitch -u freeswitch -g freeswitch -c \
 		-sounds /sounds -recordings /recordings -conf /etc/freeswitch \
-		-certs /certs -db /db -scripts /scripts -log /logs
+		-certs /certs -db /db -scripts /scripts \
+		-log /logs
 fi
 
 exec "$@"
