@@ -12,8 +12,7 @@ RUN git clone https://github.com/xadhoom/mod_bcg729.git \
 # Install FreeSWITCH with vanilla config
 ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get -y --quiet update \
-	&& apt-get -y --quiet install freeswitch-meta-vanilla freeswitch-mod-shout \
-	&& cp -a /usr/share/freeswitch/conf/vanilla /etc/freeswitch
+	&& apt-get -y --quiet install freeswitch-meta-vanilla freeswitch-mod-shout
 
 # Purge && clean
 RUN cd / && rm -rf mod_bcg729 \
