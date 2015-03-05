@@ -4,7 +4,7 @@ MAINTAINER Vitaly Kovalyshyn "v.kovalyshyn@webitel.com"
 
 ENV FS_MAJOR 1.4
 ENV FS_VERSION 1.4.15
-ENV REFRESHED_AT 2015-03-03
+ENV REFRESHED_AT 2015-03-05
 
 RUN groupadd -r freeswitch && useradd -r -g freeswitch freeswitch \
 	&& echo 'deb http://files.freeswitch.org/repo/deb/debian/ wheezy main' >> /etc/apt/sources.list.d/freeswitch.list \

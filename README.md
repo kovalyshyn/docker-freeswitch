@@ -1,8 +1,8 @@
 ## Supported tags and respective Dockerfile links
 
-- `latest` ([Dockerfile](https://github.com/webitel/docker-freeswitch/blob/master/Dockerfile))
-- `onbuild` ([Dockerfile](https://github.com/webitel/docker-freeswitch/blob/onbuild/Dockerfile))
-- `vanilla` ([Dockerfile](https://github.com/webitel/docker-freeswitch/blob/vanilla/Dockerfile))
+- `latest` ([Dockerfile](https://github.com/kovalyshyn/docker-freeswitch/blob/master/Dockerfile))
+- `onbuild` ([Dockerfile](https://github.com/kovalyshyn/docker-freeswitch/blob/onbuild/Dockerfile))
+- `vanilla` ([Dockerfile](https://github.com/kovalyshyn/docker-freeswitch/blob/vanilla/Dockerfile))
 
 ## FreeSWITCH
 
@@ -33,4 +33,4 @@ This image is officially supported on Docker version `1.5` and newest.
 ## User Feedback
 
 ### Issues
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/webitel/docker-freeswitch/issues).
+If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/kovalyshyn/docker-freeswitch/issues).
