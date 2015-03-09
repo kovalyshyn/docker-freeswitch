@@ -50,6 +50,7 @@ RUN apt-get -y --quiet update \
 	freeswitch-mod-rtmp \
 	freeswitch-mod-rtc \
 	freeswitch-mod-verto \
+	freeswitch-mod-loopback \
 	freeswitch-mod-valet-parking \
 	freeswitch-mod-spy \
 	freeswitch-mod-voicemail \
