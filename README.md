@@ -8,7 +8,7 @@
 
 [FreeSWITCH](http://www.freeswitch.org/) docker image
 
-- Current version is `1.4.15`
+- Current version is `1.4.18`
 
 ### Default FreeSWITCH image
 
