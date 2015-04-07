@@ -8,6 +8,7 @@ ENV REFRESHED_AT 2015-04-07
 
 RUN groupadd -r freeswitch && useradd -r -g freeswitch freeswitch \
 	&& echo 'deb http://files.freeswitch.org/repo/deb/debian/ wheezy main' >> /etc/apt/sources.list.d/freeswitch.list \
+	&& curl http://files.freeswitch.org/repo/deb/debian/freeswitch_archive_g0.pub | apt-key add - \
 	&& apt-get update && apt-get -y --quiet --force-yes upgrade \
 	&& apt-get install -y --quiet --force-yes locales curl libvorbis0a libogg0 libsqlite3-0 libpcre3 libspeex1 libspeexdsp1 libedit2 libjpeg8 librabbitmq1 \
 	&& curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/download/1.2/gosu-$(dpkg --print-architecture)" \
