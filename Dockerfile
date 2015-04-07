@@ -1,5 +1,5 @@
 # vim:set ft=dockerfile:
-FROM debian:wheezy
+FROM debian:jessie
 MAINTAINER Vitaly Kovalyshyn "v.kovalyshyn@webitel.com"
 
 ENV FS_MAJOR 1.4
@@ -7,7 +7,7 @@ ENV FS_VERSION 1.4.18
 ENV REFRESHED_AT 2015-04-07
 
 RUN groupadd -r freeswitch && useradd -r -g freeswitch freeswitch \
-	&& echo 'deb http://files.freeswitch.org/repo/deb/debian/ wheezy main' >> /etc/apt/sources.list.d/freeswitch.list \
+	&& echo 'deb http://files.freeswitch.org/repo/deb/debian/ jessie main' >> /etc/apt/sources.list.d/freeswitch.list \
 	&& apt-get update && apt-get -y --quiet --force-yes upgrade \
 	&& apt-get install -y --quiet --force-yes locales curl libvorbis0a libogg0 libsqlite3-0 libpcre3 libspeex1 libspeexdsp1 libedit2 libjpeg8 librabbitmq1 \
 	&& curl http://files.freeswitch.org/repo/deb/debian/freeswitch_archive_g0.pub | apt-key add - \
