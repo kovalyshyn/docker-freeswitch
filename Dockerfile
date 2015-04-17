@@ -21,7 +21,6 @@ RUN apt-get -y --quiet update \
 	freeswitch-mod-http-cache \
 	freeswitch-mod-local-stream \
 	freeswitch-mod-native-file \
-	freeswitch-mod-shout \
 	freeswitch-mod-shell-stream \
 	freeswitch-mod-lua \
 	freeswitch-mod-console \
