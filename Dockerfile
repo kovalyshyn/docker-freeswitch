@@ -46,6 +46,7 @@ RUN apt-get -y --quiet update \
 	freeswitch-mod-valet-parking \
 	freeswitch-mod-spy \
 	freeswitch-mod-voicemail \
+	freeswitch-mod-shout \
 	freeswitch-mod-fifo \
 	freeswitch-mod-callcenter \
 	freeswitch-mod-lcr \
