@@ -7,11 +7,11 @@ ENV FS_VERSION 1.4.18
 ENV REFRESHED_AT 2015-04-23
 
 RUN groupadd -r freeswitch && useradd -r -g freeswitch freeswitch \
-	&& echo 'deb http://files.freeswitch.org/repo/deb/debian/ jessie main' >> /etc/apt/sources.list.d/freeswitch.list \
-	&&  gpg --keyserver pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 \
 	&& apt-get update && apt-get -y --quiet --force-yes upgrade \
-	&& apt-get install -y --quiet --force-yes locales curl libvorbis0a libogg0 libsqlite3-0 libpcre3 libspeex1 libspeexdsp1 libedit2 libjpeg62-turbo librabbitmq1 \
+	&& apt-get install -y --quiet --force-yes locales curl wget libvorbis0a libogg0 libsqlite3-0 libpcre3 libspeex1 libspeexdsp1 libedit2 libjpeg62-turbo librabbitmq1 \
 	&& curl http://files.freeswitch.org/repo/deb/debian/freeswitch_archive_g0.pub | apt-key add - \
+        && echo "deb http://files.freeswitch.org/repo/deb/debian/ jessie main" > /etc/apt/sources.list.d/99FreeSWITCH.list \
+        && wget -O - http://files.freeswitch.org/repo/deb/debian/key.gpg |apt-key add - \
 	&& curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/download/1.2/gosu-$(dpkg --print-architecture)" \
 	&& curl -o /usr/local/bin/gosu.asc -SL "https://github.com/tianon/gosu/releases/download/1.2/gosu-$(dpkg --print-architecture).asc" \
 	&& gpg --verify /usr/local/bin/gosu.asc \
