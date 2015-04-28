@@ -4,7 +4,8 @@ MAINTAINER Vitaly Kovalyshyn "v.kovalyshyn@webitel.com"
 
 ENV FS_MAJOR 1.4
 ENV FS_VERSION 1.4.18
-ENV REFRESHED_AT 2015-04-23
+ENV DEBIAN_FRONTEND=none 
+ENV APT_LISTCHANGES_FRONTEND=none
 
 RUN groupadd -r freeswitch && useradd -r -g freeswitch freeswitch \
 	&& apt-get update && apt-get -y --quiet --force-yes upgrade \
