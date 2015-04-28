@@ -13,6 +13,7 @@ RUN groupadd -r freeswitch && useradd -r -g freeswitch freeswitch \
 	&& curl http://files.freeswitch.org/repo/deb/debian/freeswitch_archive_g0.pub | apt-key add - \
         && echo "deb http://files.freeswitch.org/repo/deb/debian/ jessie main" > /etc/apt/sources.list.d/99FreeSWITCH.list \
         && wget -O - http://files.freeswitch.org/repo/deb/debian/key.gpg |apt-key add - \
+        && gpg --keyserver pool.sks-keyservers.net --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4 \
 	&& curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/download/1.4/gosu-$(dpkg --print-architecture)" \
 	&& curl -o /usr/local/bin/gosu.asc -SL "https://github.com/tianon/gosu/releases/download/1.4/gosu-$(dpkg --print-architecture).asc" \
 	&& gpg --verify /usr/local/bin/gosu.asc \
