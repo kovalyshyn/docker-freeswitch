@@ -22,7 +22,7 @@ To run default FreeSWITCH with vanilla config (included `mod_bcg729`), just type
 
 ## Supported Docker versions
 
-This image is officially supported on Docker version `1.5` and newest.
+This image is officially supported on Docker version `1.6` and newest.
 
 ## User Feedback
 
