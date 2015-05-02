@@ -2,7 +2,6 @@
 FROM webitel/freeswitch-base
 
 # Install FreeSWITCH with vanilla config
-ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get -y --quiet update \
 	&& apt-get -y --quiet install freeswitch \
 	freeswitch-mod-commands \
@@ -54,17 +53,12 @@ RUN apt-get -y --quiet update \
 	freeswitch-mod-logfile \
 	freeswitch-timezones \
 	freeswitch-conf-vanilla \
-	&& cp -a /usr/share/freeswitch/conf/vanilla /etc/freeswitch
+	&& cp -a /usr/share/freeswitch/conf/vanilla /etc/freeswitch \
+        && apt-get clean && rm -rf /var/lib/apt/lists/*
 
-# Purge && clean
-RUN apt-get clean && rm -rf /var/lib/apt/lists/*
-
-ENV DEBIAN_FRONTEND dialog
 COPY docker-entrypoint.sh /
 
 RUN mkdir -p /docker-entrypoint.d /logs /certs /sounds /db /recordings /scripts /var/lib/freeswitch /var/run/freeswitch
-
-VOLUME ["/sounds", "/certs", "/db", "/recordings", "/scripts", "/etc/freeswitch"]
 
 ENTRYPOINT ["/docker-entrypoint.sh"]
 
