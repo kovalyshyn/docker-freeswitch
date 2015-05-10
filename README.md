@@ -1,4 +1,4 @@
-## Supported tags and respective Dockerfile links
+Supported tags and respective Dockerfile links
 
 - `latest` ([Dockerfile](https://github.com/kovalyshyn/docker-freeswitch/blob/master/Dockerfile))
 - `vanilla` ([Dockerfile](https://github.com/kovalyshyn/docker-freeswitch/blob/vanilla/Dockerfile))
@@ -27,4 +27,4 @@ This image is officially supported on Docker version `1.6` and newest.
 ## User Feedback
 
 ### Issues
-If you have any problems with or questions about this image, please contact us through a [GitHub issue](https://github.com/kovalyshyn/docker-freeswitch/issues).
+If you have any problems with or questions about this image, please contact us through a [Customer Portal](http://my.webitel.com/2/).
