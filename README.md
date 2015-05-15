@@ -26,4 +26,4 @@ This image is officially supported on Docker version `1.6` and newest.
 ## User Feedback
 
 ### Issues
-If you have any problems with or questions about this image, please contact us through a [Issues and Feature Requests](http://my.webitel.com/2/).
+If you have any problems with or questions about this image, please contact us through a [Issues and Feature Requests](http://my.webitel.com/).
