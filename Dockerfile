@@ -2,7 +2,7 @@
 FROM webitel/freeswitch-base
 
 # Install FreeSWITCH with vanilla config
-RUN apt-get -y --quiet update \
+RUN apt-get -y --quiet update && apt-get -y --quiet upgrade \
 	&& apt-get -y --quiet install libfreeswitch1 freeswitch \
         freeswitch-mod-commands \
 	freeswitch-mod-conference \
@@ -33,7 +33,7 @@ RUN apt-get -y --quiet update \
 	freeswitch-mod-g723-1 \
 	freeswitch-mod-g729 \
 	freeswitch-mod-vp8 \
-#	freeswitch-mod-opus \
+	freeswitch-mod-opus \
 	freeswitch-mod-isac \
 	freeswitch-mod-dptools \
 	freeswitch-mod-expr \
