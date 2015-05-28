@@ -3,7 +3,7 @@ FROM debian:jessie
 MAINTAINER Vitaly Kovalyshyn "v.kovalyshyn@webitel.com"
 
 ENV FS_MAJOR 1.4
-ENV FS_VERSION 1.4.18
+ENV FS_VERSION 1.4.19
 ENV DEBIAN_FRONTEND=none 
 ENV APT_LISTCHANGES_FRONTEND=none
 
