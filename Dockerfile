@@ -33,7 +33,7 @@ RUN apt-get -y --quiet update \
 	freeswitch-mod-g723-1 \
 	freeswitch-mod-g729 \
 	freeswitch-mod-vp8 \
-	freeswitch-mod-opus \
+#	freeswitch-mod-opus \
 	freeswitch-mod-isac \
 	freeswitch-mod-dptools \
 	freeswitch-mod-expr \
