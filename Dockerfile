@@ -2,8 +2,10 @@
 FROM webitel/freeswitch-base
 
 # Install FreeSWITCH with vanilla config
-RUN apt-get -y --quiet update && apt-get -y --quiet upgrade \
-	&& apt-get -y --quiet install libfreeswitch1 freeswitch \
+RUN echo 'deb http://files.freeswitch.org/repo/deb/debian/ jessie main' >> /etc/apt/sources.list.d/freeswitch.list \
+    && curl http://files.freeswitch.org/repo/deb/debian/freeswitch_archive_g0.pub | apt-key add - \
+    && apt-get -y --quiet update && apt-get -y --quiet upgrade \
+    && apt-get -y --quiet install libfreeswitch1 freeswitch \
         freeswitch-mod-commands \
 	freeswitch-mod-conference \
 	freeswitch-mod-curl \
