@@ -1,4 +1,3 @@
-# vim:set ft=dockerfile:
 FROM debian:jessie
 MAINTAINER Vitaly Kovalyshyn "v.kovalyshyn@webitel.com"
 
