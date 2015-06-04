@@ -4,7 +4,7 @@ FROM webitel/freeswitch-base
 # Install FreeSWITCH with vanilla config
 RUN apt-get -y --quiet update && apt-get -y --quiet upgrade \
     && apt-get -y --quiet install freeswitch-meta-vanilla \
-    freeswitch-mod-xml-curl freesitch-mod-cdr-pg-csv freeswitch-mod-shout \
+    freeswitch-mod-xml-curl freeswitch-mod-cdr-pg-csv freeswitch-mod-shout \
     && cp -a /usr/share/freeswitch/conf/vanilla /etc/freeswitch \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
