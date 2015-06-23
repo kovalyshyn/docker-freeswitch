@@ -11,18 +11,18 @@ Supported tags and respective Dockerfile links
 
 ### Default FreeSWITCH image
 
-To run default FreeSWITCH with vanilla config (included `mod_bcg729`), just type:
+To run default FreeSWITCH with vanilla config, just type:
 
 	docker run -d -t --name=FS --privileged=true --net="host" webitel/freeswitch-base:vanilla
 
 ### FreeSWITCH client
 	
-	docker run -i -t --name=cli webitel/freeswitch-base fs_cli -H 10.133.230.138
+	docker run -i --rm --net="host" -t webitel/freeswitch-base fs_cli
 
 
 ## Supported Docker versions
 
-This image is officially supported on Docker version `1.6` and newest.
+This image is officially supported on Docker version `1.7` and newest.
 
 ## User Feedback
 
