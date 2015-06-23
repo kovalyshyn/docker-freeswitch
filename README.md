@@ -21,7 +21,7 @@ To run default FreeSWITCH with vanilla config, just type:
 
 ## Supported Docker versions
 
-This image is officially supported on Docker version `1.6` and newest.
+This image is officially supported on Docker version `1.7` and newest.
 
 ## User Feedback
 
