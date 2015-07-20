@@ -15,6 +15,7 @@ To run default FreeSWITCH with vanilla config, just type:
 
 	docker run -d -t --name=FS --privileged=true --net="host" webitel/freeswitch-base:vanilla
 
+
 ### FreeSWITCH client
 	
 	docker run -i --rm --net="host" -t webitel/freeswitch-base fs_cli
