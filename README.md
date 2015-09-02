@@ -7,7 +7,7 @@ Supported tags and respective Dockerfile links
 
 [FreeSWITCH](http://www.freeswitch.org/) docker image
 
-- Current version is `1.4.20`
+- Current version is `1.4.21`
 
 ### Default FreeSWITCH image
 
@@ -22,9 +22,9 @@ To run default FreeSWITCH with vanilla config, just type:
 
 ## Supported Docker versions
 
-This image is officially supported on Docker version `1.7` and newest.
+This image is officially supported on Docker version `1.8` and newest.
 
 ## User Feedback
 
 ### Issues
-If you have any problems with or questions about this image, please contact us through a [Customer Portal](http://my.webitel.com/2/).
+If you have any problems with or questions about this image, please contact us through a [Customer Portal](https://my.webitel.com/).
