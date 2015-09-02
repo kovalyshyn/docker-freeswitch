@@ -7,7 +7,7 @@
 
 [FreeSWITCH](http://www.freeswitch.org/) docker image
 
-- Current version is `1.4.20`
+- Current version is `1.4.21`
 
 ### Default FreeSWITCH image
 
@@ -27,4 +27,4 @@ This image is officially supported on Docker version `1.7` and newest.
 ## User Feedback
 
 ### Issues
-If you have any problems with or questions about this image, please contact us through a [Issues and Feature Requests](http://my.webitel.com/).
+If you have any problems with or questions about this image, please contact us through a [Issues and Feature Requests](https://my.webitel.com/).
