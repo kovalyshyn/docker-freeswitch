@@ -19,7 +19,7 @@ To run default FreeSWITCH with vanilla config, default music on hold and english
 
 ### FreeSWITCH client
 	
-	docker run -i --rm --net="host" -t webitel/freeswitch-base fs_cli
+	docker run -i --rm --net="host" -t webitel/freeswitch-base:vanilla fs_cli
 
 
 ## Supported Docker versions
