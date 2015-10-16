@@ -3,7 +3,7 @@ FROM webitel/freeswitch-base
 
 # Install FreeSWITCH with vanilla config
 RUN apt-get -y --quiet update \
-    && apt-get -y --quiet install libfreeswitch1 freeswitch \
+    && apt-get -y install freeswitch \
     freeswitch-mod-commands \
 	freeswitch-mod-conference \
 	freeswitch-mod-curl \
