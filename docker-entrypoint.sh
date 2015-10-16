@@ -26,7 +26,7 @@ if [ "$1" = 'freeswitch' ]; then
         ulimit -a           # All current limits are reported.
 
 	exec gosu freeswitch freeswitch -u freeswitch -g freeswitch -c \
-		-recordings /recordings -conf /etc/freeswitch \
+		-sounds /sounds -recordings /recordings -conf /etc/freeswitch \
 		-certs /certs -db /db -scripts /scripts	-log /tmp
 fi
 
