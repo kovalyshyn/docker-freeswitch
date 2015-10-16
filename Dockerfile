@@ -30,7 +30,7 @@ RUN apt-get -y --quiet update \
 	freeswitch-mod-tone-stream \
 	freeswitch-mod-g723-1 \
 	freeswitch-mod-g729 \
-	freeswitch-mod-vpx \
+	freeswitch-mod-vp8 \
 	freeswitch-mod-opus \
 	freeswitch-mod-isac \
 	freeswitch-mod-ilbc \
