@@ -4,11 +4,10 @@ MAINTAINER Vitaly Kovalyshyn "v.kovalyshyn@webitel.com"
 ENV FS_MAJOR 1.4
 ENV FS_VERSION 1.4.23
 ENV REFRESHED_AT 2015-10-16
-ENV DEBIAN_FRONTEND=none 
-ENV APT_LISTCHANGES_FRONTEND=none
 
-RUN groupadd -r freeswitch && useradd -r -g freeswitch freeswitch \
-	&& apt-get update && apt-get -y --quiet --force-yes upgrade \
+RUN groupadd -r freeswitch && useradd -r -g freeswitch freeswitch
+
+RUN	apt-get update && apt-get -y --quiet --force-yes upgrade \
 	&& apt-get install -y --quiet --force-yes locales curl wget libvorbis0a libogg0 libsqlite3-0 libpcre3 libspeex1 libspeexdsp1 libedit2 libjpeg62-turbo librabbitmq1 \
 	&& curl http://files.freeswitch.org/repo/deb/debian/freeswitch_archive_g0.pub | apt-key add - \
     && echo "deb http://files.freeswitch.org/repo/deb/debian/ jessie main" > /etc/apt/sources.list.d/99FreeSWITCH.list \
