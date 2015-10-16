@@ -24,7 +24,7 @@ To run default FreeSWITCH with vanilla config, default music on hold and english
 
 ## Supported Docker versions
 
-This image is officially supported on Docker version `1.8` and newest.
+This image is officially supported on Docker version `1.8.3` and newest.
 
 ## User Feedback
 
