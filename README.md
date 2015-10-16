@@ -7,13 +7,15 @@ Supported tags and respective Dockerfile links
 
 [FreeSWITCH](http://www.freeswitch.org/) docker image
 
-- Current version is `1.6.2`
+- Current version is `1.4.23`
 
 ### Default FreeSWITCH image
 
-To run default FreeSWITCH with vanilla config, just type:
+To run default FreeSWITCH with vanilla config, default music on hold and english sound files, just type:
 
-	docker run -d -t --name=FS --privileged=true --net="host" webitel/freeswitch-base:vanilla
+	docker run -d -t --name=en webitel/freeswitch-sound:en
+	docker run -d -t --name=moh webitel/freeswitch-sound:moh
+	docker run -d -t --name=FS —volumes-from moh —volumes-from en —net="host" webitel/freeswitch-base:vanilla
 
 ### FreeSWITCH client
 	
