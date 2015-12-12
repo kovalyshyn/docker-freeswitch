@@ -72,8 +72,6 @@ RUN apt-get update && apt-get -y --quiet --force-yes upgrade \
 
 ENV LANG en_US.utf8
 
-RUN groupadd -r freeswitch && useradd -r -g freeswitch freeswitch
-
 COPY docker-entrypoint.sh /
 
 ENTRYPOINT ["/docker-entrypoint.sh"]
