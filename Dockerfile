@@ -1,7 +1,7 @@
 # vim:set ft=dockerfile:
 # Install FreeSWITCH with vanilla config
 FROM debian:wheezy
-MAINTAINER Vitaly Kovalyshyn "v.kovalyshyn@webitel.com"
+MAINTAINER Vitaly Kovalyshyn "vitaly@kovalyshyn.pp.ua"
 
 ENV FS_MAJOR 1.4
 ENV FS_VERSION 1.4.26
