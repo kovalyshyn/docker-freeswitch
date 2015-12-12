@@ -19,7 +19,7 @@ RUN apt-get update && apt-get -y --quiet --force-yes upgrade \
     && chmod +x /usr/local/bin/gosu \
     && localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8 \
     && apt-get -y --quiet update \
-    && apt-get -y install freeswitch-all freeswitch-mod-shout \
+    && apt-get -y install freeswitch-all libfreeswitch1 freeswitch-mod-shout \
     && cp -a /usr/share/freeswitch/conf/vanilla /etc/freeswitch \
     && apt-get clean && rm -rf /var/lib/apt/lists/* \
     && rm -rf /usr/share/freeswitch/conf \
