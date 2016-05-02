@@ -1,11 +1,11 @@
 # vim:set ft=dockerfile:
 # Install FreeSWITCH with vanilla config
-FROM debian:wheezy
+FROM debian:jessie
 MAINTAINER Vitaly Kovalyshyn "vitaly@kovalyshyn.pp.ua"
 
-ENV FS_MAJOR 1.4
-ENV FS_VERSION 1.4.26
-ENV REFRESHED_AT 2015-12-12
+ENV FS_MAJOR 1.6
+ENV FS_VERSION 1.6.7
+ENV REFRESHED_AT 2016-05-02
 
 RUN apt-get update && apt-get -y --quiet --force-yes upgrade \
     && apt-get install -y --quiet --force-yes locales curl wget \
