@@ -1,4 +1,4 @@
-## Supported tags and respective Dockerfile links
+Supported tags and respective Dockerfile links
 
 - `latest` ([Dockerfile](https://github.com/kovalyshyn/docker-freeswitch/blob/master/Dockerfile))
 - `vanilla` ([Dockerfile](https://github.com/kovalyshyn/docker-freeswitch/blob/vanilla/Dockerfile))
@@ -7,26 +7,24 @@
 
 [FreeSWITCH](http://www.freeswitch.org/) docker image
 
-- Current version is `1.6.7`
+- Current version is `1.6.8`
 
 ### Default FreeSWITCH image
 
 To run default FreeSWITCH with vanilla config, default music on hold and english sound files, just type:
 
-	docker run -d -t --name=en webitel/freeswitch-sound:en
-	docker run -d -t --name=moh webitel/freeswitch-sound:moh
-	docker run -d -t --name=FS --volumes-from moh --volumes-from en --net="host" --privileged  webitel/freeswitch-base:vanilla
-
+	docker run -d -t --name=FS --net="host" webitel/freeswitch-base:vanilla
 
 ### FreeSWITCH client
 	
 	docker run -i --rm --net="host" -t webitel/freeswitch-base:vanilla fs_cli
 
+
 ## Supported Docker versions
 
-This image is officially supported on Docker version `1.11` and newest.
+This image is officially supported on Docker version `1.10` and newest.
 
 ## User Feedback
 
 ### Issues
-If you have any problems with or questions about this image, please contact us through a [Issues and Feature Requests](https://my.webitel.com/).
+If you have any problems with or questions about this image, please contact us through a [Customer Portal](https://my.webitel.com/).
