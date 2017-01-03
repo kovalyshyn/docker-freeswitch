@@ -3,7 +3,7 @@ MAINTAINER Vitaly Kovalyshyn "v.kovalyshyn@webitel.com"
 
 ENV FS_MAJOR 1.6
 ENV FS_VERSION 1.6.13 
-ENV REFRESHED_AT 2016-12-07
+ENV REFRESHED_AT 2017-01-03
 
 RUN apt-get update && apt-get -y --quiet --force-yes upgrade \
     && apt-get install -y --quiet --force-yes locales curl wget libvorbis0a libogg0 libsqlite3-0 libpcre3 libspeex1 libspeexdsp1 libedit2 libjpeg62-turbo librabbitmq1 \
