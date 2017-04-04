@@ -7,7 +7,7 @@ Supported tags and respective Dockerfile links
 
 [FreeSWITCH](http://www.freeswitch.org/) docker image
 
-- Current version is `1.6.15`
+- Current version is `1.6.16`
 
 ### Default FreeSWITCH image
 
@@ -22,7 +22,7 @@ To run default FreeSWITCH with vanilla config, default music on hold and english
 
 ## Supported Docker versions
 
-This image is officially supported on Docker version `1.12` and newest.
+This image is officially supported on Docker version `1.13` and newest.
 
 ## User Feedback
 
