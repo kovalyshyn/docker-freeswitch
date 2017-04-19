@@ -7,7 +7,7 @@ Supported tags and respective Dockerfile links
 
 [FreeSWITCH](http://www.freeswitch.org/) docker image
 
-- Current version is `1.6.16`
+- Current version is `1.6.17`
 
 ### Default FreeSWITCH image
 
