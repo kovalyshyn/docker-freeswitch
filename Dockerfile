@@ -1,7 +1,7 @@
 # vim:set ft=dockerfile:
 # Install FreeSWITCH with vanilla config
 FROM webitel/freeswitch-base
-MAINTAINER Vitaly Kovalyshyn "vitaly@kovalyshyn.pp.ua"
+LABEL maintainer="Vitaly Kovalyshyn"
 
 RUN apt-get -y --quiet update \
     && apt-get -y --quiet --force-yes install freeswitch-all \
