@@ -6,7 +6,7 @@ ENV FS_VERSION 1.8.5
 ENV REFRESHED_AT 2019-03-11
 
 RUN apt-get update && apt-get -y --quiet --force-yes upgrade \
-    && apt-get install -y --quiet --force-yes gnupg2 wget \
+    && apt-get install -y --quiet --force-yes gnupg2 wget curl \
     && wget -O - https://files.freeswitch.org/repo/deb/freeswitch-1.8/fsstretch-archive-keyring.asc | apt-key add - \
     && echo "deb http://files.freeswitch.org/repo/deb/freeswitch-1.8/ stretch main" > /etc/apt/sources.list.d/freeswitch.list \
     && echo "deb-src http://files.freeswitch.org/repo/deb/freeswitch-1.8/ stretch main" >> /etc/apt/sources.list.d/freeswitch.list \
