@@ -11,8 +11,8 @@ if [ "$1" = 'freeswitch' ]; then
 			[ -f "$f" ] && . "$f"
 		done
 	fi
-	
-	exec gosu freeswitch freeswitch -u freeswitch -g freeswitch -c \
+
+	exec freeswitch freeswitch -u freeswitch -g freeswitch -c \
 		-sounds /sounds -recordings /recordings -conf /etc/freeswitch \
 		-certs /certs -db /db -scripts /scripts	-log /tmp
 fi

@@ -7,7 +7,7 @@ Supported tags and respective Dockerfile links
 
 [FreeSWITCH](http://www.freeswitch.org/) docker image
 
-- Current version is `1.6.20`
+- Current version is `1.8.5`
 
 ### Default FreeSWITCH image
 
@@ -16,13 +16,9 @@ To run default FreeSWITCH with vanilla config, default music on hold and english
 	docker run -d -t --name=FS --net="host" webitel/freeswitch-base:vanilla
 
 ### FreeSWITCH client
-	
+
 	docker run -i --rm --net="host" -t webitel/freeswitch-base:vanilla fs_cli
 
-
-## Supported Docker versions
-
-This image is officially supported on Docker version `1.13` and newest.
 
 ## User Feedback
 
