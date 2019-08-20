@@ -2,8 +2,8 @@ FROM debian:stretch
 MAINTAINER Vitaly Kovalyshyn "v.kovalyshyn@webitel.com"
 
 ENV FS_MAJOR 1.10
-ENV FS_VERSION 1.10.0
-ENV REFRESHED_AT 2019-08-07
+ENV FS_VERSION 1.10.1
+ENV REFRESHED_AT 2019-08-20
 
 RUN apt update && apt -y --quiet upgrade && apt install -y --quiet gnupg2 wget \
     && wget -O - https://files.freeswitch.org/repo/deb/debian-release/fsstretch-archive-keyring.asc | apt-key add - \

@@ -7,7 +7,7 @@ Supported tags and respective Dockerfile links
 
 [FreeSWITCH](http://www.freeswitch.org/) docker image
 
-- Current version is `1.10.0`
+- Current version is `1.10.1`
 
 ### Default FreeSWITCH image
 
