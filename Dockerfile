@@ -1,4 +1,3 @@
-# vim:set ft=dockerfile:
 # Install FreeSWITCH with vanilla config
 FROM webitel/freeswitch-base
 LABEL maintainer="Vitaly Kovalyshyn"
